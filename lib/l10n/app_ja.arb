@@ -145,6 +145,9 @@
   "langSystem": "システムに従う",
   "settingsMiniLyric": "ミニプレイヤーに現在の歌詞を表示",
   "settingsMinimizeToTray": "ウィンドウを閉じる時にトレイに最小化",
+  "trayShowWindow": "メインウィンドウを表示",
+  "trayQuit": "YesPlayMusic を終了",
+  "settingsMinimizeToTrayHint": "ウィンドウを閉じるとトレイに最小化し、再生を続けます。GNOME でトレイアイコンを表示するには AppIndicator 拡張が必要です。",
 
   "aboutDownloadVersion": "{version} をダウンロード",
   "aboutChecking": "確認中…",

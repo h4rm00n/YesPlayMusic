@@ -429,6 +429,16 @@ class AppLocalizationsFr extends AppLocalizations {
       'Réduire dans la barre d\'état à la fermeture';
 
   @override
+  String get trayShowWindow => 'Afficher la fenêtre principale';
+
+  @override
+  String get trayQuit => 'Quitter YesPlayMusic';
+
+  @override
+  String get settingsMinimizeToTrayHint =>
+      'Fermer la fenêtre réduit dans la zone de notification et la lecture continue. GNOME nécessite l’extension AppIndicator pour afficher l’icône.';
+
+  @override
   String aboutDownloadVersion(String version) {
     return 'Télécharger $version';
   }

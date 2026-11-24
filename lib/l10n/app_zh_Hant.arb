@@ -145,6 +145,9 @@
   "langSystem": "跟隨系統",
   "settingsMiniLyric": "在迷你播放器顯示目前歌詞",
   "settingsMinimizeToTray": "關閉視窗時最小化到系統匣",
+  "trayShowWindow": "顯示主視窗",
+  "trayQuit": "結束 YesPlayMusic",
+  "settingsMinimizeToTrayHint": "關閉視窗後最小化到系統列、音樂繼續播放。GNOME 需要安裝 AppIndicator 擴充套件才會顯示系統列圖示。",
 
   "aboutDownloadVersion": "下載 {version}",
   "aboutChecking": "正在檢查…",

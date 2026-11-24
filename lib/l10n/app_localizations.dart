@@ -933,6 +933,24 @@ abstract class AppLocalizations {
   /// **'关闭窗口时最小化到托盘'**
   String get settingsMinimizeToTray;
 
+  /// No description provided for @trayShowWindow.
+  ///
+  /// In zh, this message translates to:
+  /// **'显示主窗口'**
+  String get trayShowWindow;
+
+  /// No description provided for @trayQuit.
+  ///
+  /// In zh, this message translates to:
+  /// **'退出 YesPlayMusic'**
+  String get trayQuit;
+
+  /// No description provided for @settingsMinimizeToTrayHint.
+  ///
+  /// In zh, this message translates to:
+  /// **'关闭窗口后最小化到托盘、音乐继续播放。GNOME 需要安装 AppIndicator 扩展才会显示托盘图标。'**
+  String get settingsMinimizeToTrayHint;
+
   /// No description provided for @aboutDownloadVersion.
   ///
   /// In zh, this message translates to:

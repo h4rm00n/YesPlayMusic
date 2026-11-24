@@ -145,6 +145,9 @@
   "langSystem": "Systemsprache",
   "settingsMiniLyric": "Aktuellen Songtext im Mini-Player anzeigen",
   "settingsMinimizeToTray": "Beim Schließen in den Infobereich minimieren",
+  "trayShowWindow": "Hauptfenster zeigen",
+  "trayQuit": "YesPlayMusic beenden",
+  "settingsMinimizeToTrayHint": "Beim Schließen des Fensters wird in den Systemabschnitt minimiert und die Wiedergabe läuft weiter. GNOME benötigt die AppIndicator-Erweiterung, um das Symbol anzuzeigen.",
 
   "aboutDownloadVersion": "{version} herunterladen",
   "aboutChecking": "Wird geprüft…",

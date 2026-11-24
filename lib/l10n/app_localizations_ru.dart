@@ -427,6 +427,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get settingsMinimizeToTray => 'Сворачивать в трей при закрытии окна';
 
   @override
+  String get trayShowWindow => 'Показать главное окно';
+
+  @override
+  String get trayQuit => 'Выйти из YesPlayMusic';
+
+  @override
+  String get settingsMinimizeToTrayHint =>
+      'Закрытие окна сворачивает приложение в трей, воспроизведение продолжается. В GNOME нужно расширение AppIndicator, чтобы показать значок в трее.';
+
+  @override
   String aboutDownloadVersion(String version) {
     return 'Скачать $version';
   }

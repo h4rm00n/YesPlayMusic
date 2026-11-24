@@ -508,14 +508,14 @@ class _Playback extends StatelessWidget {
     return Column(
       children: [
         // 音质由各插件在自己的设置里决定，这里不再放
-        _row(
-          66,
-          context.l10n.settingsMinimizeToTray,
-          Toggle(
-            value: app.tray,
-            onChanged: (v) => app.update(() => app.tray = v),
+        // 托盘目前只在 Linux 实现，其他平台先不显示这个开关
+        if (Platform.isLinux)
+          _row(
+            66,
+            context.l10n.settingsMinimizeToTray,
+            Toggle(value: app.tray, onChanged: app.setTray),
+            hint: context.l10n.settingsMinimizeToTrayHint,
           ),
-        ),
       ],
     );
   }

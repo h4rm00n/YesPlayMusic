@@ -425,6 +425,16 @@ class AppLocalizationsJa extends AppLocalizations {
   String get settingsMinimizeToTray => 'ウィンドウを閉じる時にトレイに最小化';
 
   @override
+  String get trayShowWindow => 'メインウィンドウを表示';
+
+  @override
+  String get trayQuit => 'YesPlayMusic を終了';
+
+  @override
+  String get settingsMinimizeToTrayHint =>
+      'ウィンドウを閉じるとトレイに最小化し、再生を続けます。GNOME でトレイアイコンを表示するには AppIndicator 拡張が必要です。';
+
+  @override
   String aboutDownloadVersion(String version) {
     return '$version をダウンロード';
   }

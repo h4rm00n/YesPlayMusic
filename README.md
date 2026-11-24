@@ -132,7 +132,7 @@ flutter test
 
 - **macOS**：Xcode 和 CocoaPods
 - **Windows**：Visual Studio 2022，勾选「使用 C++ 的桌面开发」
-- **Linux**：`sudo apt install clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libmpv-dev`
+- **Linux**：`sudo apt install clang cmake ninja-build pkg-config libgtk-3-dev libx11-dev libxi-dev liblzma-dev libmpv-dev`
 
 ## 反馈
 

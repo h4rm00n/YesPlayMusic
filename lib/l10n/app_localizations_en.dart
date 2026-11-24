@@ -428,6 +428,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsMinimizeToTray => 'Minimize to tray when closing window';
 
   @override
+  String get trayShowWindow => 'Show YesPlayMusic';
+
+  @override
+  String get trayQuit => 'Quit YesPlayMusic';
+
+  @override
+  String get settingsMinimizeToTrayHint =>
+      'Closing the window minimizes to the tray and keeps playing. GNOME needs the AppIndicator extension to show the tray icon.';
+
+  @override
   String aboutDownloadVersion(String version) {
     return 'Download $version';
   }

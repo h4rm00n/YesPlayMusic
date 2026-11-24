@@ -20,6 +20,7 @@ import 'state.dart';
 import 'updater.dart';
 import 'version.dart';
 import 'theme.dart';
+import 'tray.dart';
 
 Future<void> main() async {
   AppBinding.init();
@@ -74,6 +75,7 @@ class _YesPlayMusicState extends State<YesPlayMusic> {
   late String _lang = state.lang;
   late final _keys = ShortcutHandler(state);
   late final _media = MediaSession(state);
+  late final _tray = Tray(state);
   late final AppLifecycleListener _lifecycle;
 
   @override
@@ -82,6 +84,7 @@ class _YesPlayMusicState extends State<YesPlayMusic> {
     state.addListener(_onState);
     _keys.attach();
     _media.attach();
+    _tray.attach();
     // 窗口回到前台时重取音乐库（可能在官方客户端里刚喜欢了歌）
     _lifecycle = AppLifecycleListener(onResume: state.onAppResume);
     state.loadLibrary();
@@ -115,6 +118,7 @@ class _YesPlayMusicState extends State<YesPlayMusic> {
     state.removeListener(_onState);
     _keys.detach();
     _media.detach();
+    _tray.detach();
     _lifecycle.dispose();
     state.dispose();
     super.dispose();

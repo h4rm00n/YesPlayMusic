@@ -2887,7 +2887,9 @@ class AppState extends ChangeNotifier {
   int swatch = 0;
   String lang = _prefs()['lang'] as String? ?? 'system';
   bool miniLyric = true;
-  bool tray = false;
+
+  /// 关窗时最小化到托盘继续播（托盘实现见 lib/tray.dart）。
+  bool tray = _prefs()['tray'] != false;
 
   Locale? get locale => AppLanguage.byCode(lang).locale;
 
@@ -2896,6 +2898,13 @@ class AppState extends ChangeNotifier {
     if (lang == normalized) return;
     lang = normalized;
     _savePrefs({'lang': lang});
+    notifyListeners();
+  }
+
+  void setTray(bool on) {
+    if (tray == on) return;
+    tray = on;
+    _savePrefs({'tray': tray});
     notifyListeners();
   }
 

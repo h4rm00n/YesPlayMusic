@@ -428,6 +428,16 @@ class AppLocalizationsDe extends AppLocalizations {
       'Beim Schließen in den Infobereich minimieren';
 
   @override
+  String get trayShowWindow => 'Hauptfenster zeigen';
+
+  @override
+  String get trayQuit => 'YesPlayMusic beenden';
+
+  @override
+  String get settingsMinimizeToTrayHint =>
+      'Beim Schließen des Fensters wird in den Systemabschnitt minimiert und die Wiedergabe läuft weiter. GNOME benötigt die AppIndicator-Erweiterung, um das Symbol anzuzeigen.';
+
+  @override
   String aboutDownloadVersion(String version) {
     return '$version herunterladen';
   }

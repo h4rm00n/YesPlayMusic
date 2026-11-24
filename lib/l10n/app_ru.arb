@@ -145,6 +145,9 @@
   "langSystem": "Как в системе",
   "settingsMiniLyric": "Показывать текст песни в мини-плеере",
   "settingsMinimizeToTray": "Сворачивать в трей при закрытии окна",
+  "trayShowWindow": "Показать главное окно",
+  "trayQuit": "Выйти из YesPlayMusic",
+  "settingsMinimizeToTrayHint": "Закрытие окна сворачивает приложение в трей, воспроизведение продолжается. В GNOME нужно расширение AppIndicator, чтобы показать значок в трее.",
 
   "aboutDownloadVersion": "Скачать {version}",
   "aboutChecking": "Проверка…",

@@ -425,6 +425,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get settingsMinimizeToTray => '关闭窗口时最小化到托盘';
 
   @override
+  String get trayShowWindow => '显示主窗口';
+
+  @override
+  String get trayQuit => '退出 YesPlayMusic';
+
+  @override
+  String get settingsMinimizeToTrayHint =>
+      '关闭窗口后最小化到托盘、音乐继续播放。GNOME 需要安装 AppIndicator 扩展才会显示托盘图标。';
+
+  @override
   String aboutDownloadVersion(String version) {
     return '下载 $version';
   }
@@ -2083,6 +2093,16 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get settingsMinimizeToTray => '關閉視窗時最小化到系統匣';
+
+  @override
+  String get trayShowWindow => '顯示主視窗';
+
+  @override
+  String get trayQuit => '結束 YesPlayMusic';
+
+  @override
+  String get settingsMinimizeToTrayHint =>
+      '關閉視窗後最小化到系統列、音樂繼續播放。GNOME 需要安裝 AppIndicator 擴充套件才會顯示系統列圖示。';
 
   @override
   String aboutDownloadVersion(String version) {

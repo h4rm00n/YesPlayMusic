@@ -145,6 +145,9 @@
   "langSystem": "시스템 설정 따르기",
   "settingsMiniLyric": "미니 플레이어에 현재 가사 표시",
   "settingsMinimizeToTray": "창을 닫을 때 트레이로 최소화",
+  "trayShowWindow": "메인 창 표시",
+  "trayQuit": "YesPlayMusic 종료",
+  "settingsMinimizeToTrayHint": "창을 닫으면 트레이로 최소화되고 재생은 계속됩니다. GNOME에서는 트레이 아이콘 표시를 위해 AppIndicator 확장이 필요합니다.",
 
   "aboutDownloadVersion": "{version} 다운로드",
   "aboutChecking": "확인 중…",

@@ -145,6 +145,9 @@
   "langSystem": "Suivre le système",
   "settingsMiniLyric": "Afficher les paroles dans le mini-lecteur",
   "settingsMinimizeToTray": "Réduire dans la barre d'état à la fermeture",
+  "trayShowWindow": "Afficher la fenêtre principale",
+  "trayQuit": "Quitter YesPlayMusic",
+  "settingsMinimizeToTrayHint": "Fermer la fenêtre réduit dans la zone de notification et la lecture continue. GNOME nécessite l’extension AppIndicator pour afficher l’icône.",
 
   "aboutDownloadVersion": "Télécharger {version}",
   "aboutChecking": "Vérification…",

@@ -155,6 +155,9 @@
   "langSystem": "跟随系统",
   "settingsMiniLyric": "在迷你播放器显示当前歌词",
   "settingsMinimizeToTray": "关闭窗口时最小化到托盘",
+  "trayShowWindow": "显示主窗口",
+  "trayQuit": "退出 YesPlayMusic",
+  "settingsMinimizeToTrayHint": "关闭窗口后最小化到托盘、音乐继续播放。GNOME 需要安装 AppIndicator 扩展才会显示托盘图标。",
 
   "aboutDownloadVersion": "下载 {version}",
   "@aboutDownloadVersion": {

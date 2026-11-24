@@ -132,7 +132,7 @@ Additional requirements per platform:
 
 - **macOS**: Xcode and CocoaPods
 - **Windows**: Visual Studio 2022 with the "Desktop development with C++" workload
-- **Linux**: `sudo apt install clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libmpv-dev`
+- **Linux**: `sudo apt install clang cmake ninja-build pkg-config libgtk-3-dev libx11-dev libxi-dev liblzma-dev libmpv-dev`
 
 ## Feedback
 

@@ -70,4 +70,4 @@ flutter build windows --release   # build\windows\x64\runner\Release\
 flutter build linux --release     # build/linux/x64/release/bundle/
 ```
 
-Linux 构建需要：`clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libmpv-dev`。
+Linux 构建需要：`clang cmake ninja-build pkg-config libgtk-3-dev libx11-dev libxi-dev liblzma-dev libmpv-dev`。

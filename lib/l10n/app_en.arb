@@ -145,6 +145,9 @@
   "langSystem": "Follow System",
   "settingsMiniLyric": "Show current lyric in mini player",
   "settingsMinimizeToTray": "Minimize to tray when closing window",
+  "trayShowWindow": "Show YesPlayMusic",
+  "trayQuit": "Quit YesPlayMusic",
+  "settingsMinimizeToTrayHint": "Closing the window minimizes to the tray and keeps playing. GNOME needs the AppIndicator extension to show the tray icon.",
 
   "aboutDownloadVersion": "Download {version}",
   "aboutChecking": "Checking…",

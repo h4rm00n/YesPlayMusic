@@ -425,6 +425,16 @@ class AppLocalizationsKo extends AppLocalizations {
   String get settingsMinimizeToTray => '창을 닫을 때 트레이로 최소화';
 
   @override
+  String get trayShowWindow => '메인 창 표시';
+
+  @override
+  String get trayQuit => 'YesPlayMusic 종료';
+
+  @override
+  String get settingsMinimizeToTrayHint =>
+      '창을 닫으면 트레이로 최소화되고 재생은 계속됩니다. GNOME에서는 트레이 아이콘 표시를 위해 AppIndicator 확장이 필요합니다.';
+
+  @override
   String aboutDownloadVersion(String version) {
     return '$version 다운로드';
   }

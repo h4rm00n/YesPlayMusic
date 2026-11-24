@@ -145,6 +145,9 @@
   "langSystem": "Seguir al sistema",
   "settingsMiniLyric": "Mostrar letra actual en el minirreproductor",
   "settingsMinimizeToTray": "Minimizar a la bandeja al cerrar la ventana",
+  "trayShowWindow": "Mostrar ventana principal",
+  "trayQuit": "Salir de YesPlayMusic",
+  "settingsMinimizeToTrayHint": "Al cerrar la ventana se minimiza en la bandeja y la reproducción continúa. GNOME necesita la extensión AppIndicator para mostrar el icono.",
 
   "aboutDownloadVersion": "Descargar {version}",
   "aboutChecking": "Comprobando…",

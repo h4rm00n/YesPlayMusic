@@ -428,6 +428,16 @@ class AppLocalizationsEs extends AppLocalizations {
       'Minimizar a la bandeja al cerrar la ventana';
 
   @override
+  String get trayShowWindow => 'Mostrar ventana principal';
+
+  @override
+  String get trayQuit => 'Salir de YesPlayMusic';
+
+  @override
+  String get settingsMinimizeToTrayHint =>
+      'Al cerrar la ventana se minimiza en la bandeja y la reproducción continúa. GNOME necesita la extensión AppIndicator para mostrar el icono.';
+
+  @override
   String aboutDownloadVersion(String version) {
     return 'Descargar $version';
   }
