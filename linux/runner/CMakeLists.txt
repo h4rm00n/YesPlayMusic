@@ -23,4 +23,20 @@ add_definitions(-DAPPLICATION_ID="${APPLICATION_ID}")
 target_link_libraries(${BINARY_NAME} PRIVATE flutter)
 target_link_libraries(${BINARY_NAME} PRIVATE PkgConfig::GTK)
 
+# Flutter 3.50's libflutter_linux_gtk.so exports the _Unwind_* symbols of its
+# bundled unwinder ahead of libgcc_s. Libraries loaded later that use the GCC
+# unwinder (libmpv built with LuaJIT, C++ or Rust plugins) then mix the two
+# unwinders and crash. Linking libgcc_s first makes the whole process use one.
+# From https://github.com/flutter/flutter/issues/196402; drop this once the
+# engine stops exporting them (#196451) in a stable release.
+include(CheckCXXSourceCompiles)
+set(CMAKE_REQUIRED_FLAGS "-Wl,--push-state,--no-as-needed,-lgcc_s,--pop-state")
+check_cxx_source_compiles("int main() { return 0; }" HAVE_LIBGCC_S)
+unset(CMAKE_REQUIRED_FLAGS)
+if(HAVE_LIBGCC_S)
+  target_link_options(${BINARY_NAME} PRIVATE
+    "LINKER:--push-state,--no-as-needed,-lgcc_s,--pop-state"
+  )
+endif()
+
 target_include_directories(${BINARY_NAME} PRIVATE "${CMAKE_SOURCE_DIR}")

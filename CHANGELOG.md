@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### 修复
+
+- Linux 上放完一首切下一首时随机段错误：发生在用 LuaJIT 构建 mpv 的发行版上（Arch 等）。
+
 ## [3.0.0] - 2026-11-24
 
 YesPlayMusic 用 Flutter 重写的第一个版本。
